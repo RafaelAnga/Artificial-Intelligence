@@ -153,8 +153,7 @@ Uses 'Social_Network_Ads.csv' containing:
    - Training/Test set visualization
    - Confusion Matrix
 
-## Usage
-1. Data Preparation:
+
 ############################################################################################################################################################################################################################
 # K-Nearest Neighbors (KNN) Social Network Ad Prediction
 
