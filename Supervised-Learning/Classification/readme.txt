@@ -1,3 +1,53 @@
+# Bank Customer Churn Prediction using XGBoost
+
+## Project Overview
+This project implements a machine learning solution using XGBoost to predict customer churn in a banking context. The model analyzes various customer attributes to predict whether a customer is likely to leave the bank, enabling proactive customer retention strategies.
+
+## Technical Stack
+- Python 3.x
+- Libraries:
+  - XGBoost (v2.1.2): Core classification algorithm
+  - scikit-learn (v1.5.2): For model evaluation and data processing
+  - Pandas: Data manipulation and analysis
+  - NumPy: Numerical operations
+  - Matplotlib: Visualization
+  - Google Colab: Development environment
+
+## Dataset
+The project uses 'churn_modelling.csv' containing customer information:
+- Demographics (Geography, Gender, Age)
+- Banking relationship (Credit Score, Balance, Products)
+- Account details (Tenure, Credit Card status)
+- Customer behavior (IsActiveMember)
+- Economic factors (EstimatedSalary)
+
+## Features
+1. Data Preprocessing
+   - Removal of non-predictive columns (CustomerId, Surname)
+   - Categorical encoding for Geography and Gender
+   - Feature scaling and preparation
+
+2. Model Implementation
+   - XGBoost Classifier with optimized parameters:
+     - max_depth = 3
+     - learning_rate = 0.2
+     - n_estimators = 100
+     - subsample = 1.0
+
+3. Model Evaluation
+   - Confusion Matrix visualization
+   - Accuracy metrics
+   - 10-fold Cross-validation
+   - Hyperparameter optimization using GridSearchCV
+
+## Performance Metrics
+- High accuracy on test data
+- Robust cross-validation results
+- Detailed confusion matrix analysis
+- Optimized hyperparameters through grid search
+
+###############################################################################################################
+
 # Breast Cancer Detection using XGBoost
 
 ## Project Overview
