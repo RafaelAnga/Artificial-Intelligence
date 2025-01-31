@@ -46,7 +46,7 @@ The project uses 'churn_modelling.csv' containing customer information:
 - Detailed confusion matrix analysis
 - Optimized hyperparameters through grid search
 
-###############################################################################################################
+#############################################################################################################################################################################################################################
 
 # Breast Cancer Detection using XGBoost
 
@@ -117,7 +117,45 @@ pip install scikit-learn==1.5.1
 - Integration with medical imaging data
 - Development of user interface for medical professionals
 
-################################################################################################################
+#############################################################################################################################################################################################################################
+
+# Kernel SVM Social Network Ad Prediction
+
+## Project Overview
+This project implements a Kernel Support Vector Machine (SVM) classifier to predict customer purchases based on social network advertising data, using age and estimated salary as features.
+
+## Technical Stack
+- Python 3.x
+- Libraries:
+  - scikit-learn: For SVM implementation
+  - Pandas: Data manipulation
+  - NumPy: Numerical operations
+  - Matplotlib: Visualization
+  - Google Colab: Development environment
+
+## Dataset
+Uses 'Social_Network_Ads.csv' containing:
+- Age
+- Estimated Salary
+- Purchase Decision (0/1)
+
+## Features
+1. Data Preprocessing
+   - Feature scaling
+   - Train-test split (75-25)
+
+2. Model Implementation
+   - Kernel SVM with RBF kernel
+   - Random state for reproducibility
+
+3. Visualization
+   - Decision boundary plotting
+   - Training/Test set visualization
+   - Confusion Matrix
+
+## Usage
+1. Data Preparation:
+############################################################################################################################################################################################################################
 # K-Nearest Neighbors (KNN) Social Network Ad Prediction
 
 ## Project Overview
