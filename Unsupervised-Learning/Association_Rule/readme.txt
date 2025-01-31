@@ -1,68 +1,50 @@
-# Breast Cancer Detection using XGBoost
+# Market Basket Analysis using Apriori Algorithm
 
 ## Project Overview
-This machine learning project implements a breast cancer detection system using the XGBoost algorithm to classify breast cancer cases as benign or malignant. The model achieves high accuracy in predicting cancer diagnoses based on cellular characteristics.
+This project implements market basket analysis using the Apriori algorithm to discover associations between products in retail transaction data. The analysis helps identify which products are frequently purchased together, enabling better business decisions for product placement and marketing strategies.
 
 ## Technical Stack
 - Python 3.x
-- Key Libraries:
-  - XGBoost (v2.1.2): Core classification algorithm
-  - scikit-learn (v1.5.1): For model evaluation and data splitting
+- Libraries:
+  - Apyori: For implementing Apriori algorithm
   - Pandas: Data manipulation and analysis
-  - NumPy: Numerical computations
+  - NumPy: Numerical operations
   - Matplotlib: Visualization
-  
+  - Google Colab: Development environment
+
 ## Dataset
-The project uses the Breast Cancer Wisconsin dataset containing cellular features:
-- Features include measurements of cell characteristics
-- Binary classification: Benign (0) or Malignant (1)
-- Dataset is split 80/20 for training and testing
+The analysis uses 'Market_Basket_Optimisation.csv' containing:
+- 7,501 transactions
+- 20 items per transaction
+- Product names and purchase combinations
 
 ## Features
 1. Data Preprocessing
-   - Data loading and exploration
-   - Binary label conversion
-   - Train-test splitting
+   - Transaction data formatting
+   - String conversion for product names
+   - Data structure optimization
 
-2. Model Implementation
-   - XGBoost Classifier with logloss evaluation metric
-   - Hyperparameter optimization
-   - Model training and prediction
+2. Apriori Implementation
+   - Parameters:
+     - min_support = 0.003 (minimum item frequency)
+     - min_confidence = 0.2 (rule strength threshold)
+     - min_lift = 3 (association strength threshold)
+     - min_length = 2 (minimum items in rule)
+     - max_length = 2 (maximum items in rule)
 
-3. Performance Evaluation
-   - Confusion Matrix visualization
-   - Accuracy metrics
-   - K-Fold Cross-validation (10 folds)
+3. Results Analysis
+   - Association rule generation
+   - Support, Confidence, and Lift calculations
+   - Rule visualization in DataFrame format
 
-## Model Performance
-- High accuracy on test data
-- Robust performance verified through cross-validation
-- Mean accuracy and standard deviation calculations
-- Confusion matrix visualization for detailed performance analysis
+## Key Metrics
+- Support: Frequency of item combinations
+- Confidence: Probability of purchasing associated items
+- Lift: Strength of item relationships
 
-## Usage
-1. Install required dependencies:
-pip install xgboost==2.1.2
-pip install scikit-learn==1.5.1
-
-2. Load and preprocess the breast cancer dataset
-3. Train the XGBoost model
-4. Evaluate results using provided metrics
-
-## Key Results
-- Reliable cancer detection through machine learning
-- Cross-validated performance metrics
-- Visualization of model predictions
-- Robust evaluation through multiple validation techniques
-
-## Applications
-- Medical diagnosis support
-- Cancer screening assistance
-- Research and development in medical AI
-- Educational purposes in medical data analysis
-
-## Future Improvements
-- Feature importance analysis
-- Hyperparameter tuning optimization
-- Integration with medical imaging data
-- Development of user interface for medical professionals
+## Business Applications
+- Product placement optimization
+- Cross-selling recommendations
+- Promotional strategy development
+- Inventory management
+- Store layout planning
