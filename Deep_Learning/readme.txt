@@ -48,7 +48,6 @@ Technical Stack
     - Confusion Matrix and Accuracy Score for performance metrics
     - Visualizes confusion matrix using Seaborn heatmap
 
-
 ## Key Metrics
 - Confusion Matrix: Displays true positives, true negatives, false positives, and false negatives
 - Accuracy Score: Quantifies the overall prediction success of the mode
