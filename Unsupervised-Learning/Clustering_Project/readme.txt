@@ -1,4 +1,4 @@
-# Customer Segmentation Analysis using K-Means Clustering
+# KMeans Customer Segmentation Analysis 
 
 ## Project Overview
 This project implements customer segmentation analysis using K-Means clustering algorithm to identify distinct customer groups based on their annual income and spending patterns. The analysis helps businesses understand their customer base and develop targeted marketing strategies.
