@@ -1,4 +1,4 @@
-Bank Customer Churn Prediction using Artificial Neural Network
+ANN Bank Churn
 
 **Project Overview**
 This project implements an Artificial Neural Network (ANN) to predict customer churn in a banking context. Customer churn refers to customers leaving the bank, and this model helps identify such customers based on their demographic, financial, and behavioral data. By predicting churn, banks can take proactive measures to retain valuable customers and improve customer satisfaction.
