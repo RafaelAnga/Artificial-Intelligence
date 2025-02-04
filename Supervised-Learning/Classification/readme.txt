@@ -58,9 +58,91 @@ Technical Stack
 - Data-Driven Decision Making: Supports marketing and customer service teams with actionable insights
 - Revenue Optimization: Reduces churn rates, leading to increased customer lifetime value
 
+
 #############################################################################################################################################################################################################################
 
-# Bank Customer Churn Prediction using XGBoost
+# Kernel SVM Social Network Ad Prediction
+
+## Project Overview
+This project implements a Kernel Support Vector Machine (SVM) classifier to predict customer purchases based on social network advertising data, using age and estimated salary as features.
+
+## Technical Stack
+- Python 3.x
+- Libraries:
+  - scikit-learn: For SVM implementation
+  - Pandas: Data manipulation
+  - NumPy: Numerical operations
+  - Matplotlib: Visualization
+  - Google Colab: Development environment
+
+## Dataset
+Uses 'Social_Network_Ads.csv' containing:
+- Age
+- Estimated Salary
+- Purchase Decision (0/1)
+
+## Features
+1. Data Preprocessing
+   - Feature scaling
+   - Train-test split (75-25)
+
+2. Model Implementation
+   - Kernel SVM with RBF kernel
+   - Random state for reproducibility
+
+3. Visualization
+   - Decision boundary plotting
+   - Training/Test set visualization
+   - Confusion Matrix
+
+############################################################################################################################################################################################################################
+# K-Nearest Neighbors (KNN) Social Network Ad Prediction
+
+## Project Overview
+This project implements a K-Nearest Neighbors (KNN) classifier to predict whether users will purchase based on their age and estimated salary from social network ad data. The model helps identify potential customers for targeted advertising.
+
+## Technical Stack
+- Python 3.x
+- Libraries:
+  - scikit-learn: For KNN implementation and model evaluation
+  - Pandas: Data manipulation and analysis
+  - NumPy: Numerical computations
+  - Matplotlib: Visualization
+  - Google Colab: Development environment
+
+## Dataset
+The project uses 'Social_Network_Ads.csv' containing:
+- Age
+- Estimated Salary
+- Purchase Decision (0 = No, 1 = Yes)
+
+## Features
+1. Data Preprocessing
+   - Feature scaling using StandardScaler
+   - Train-test split (75%-25%)
+   - Data normalization
+
+2. Model Implementation
+   - KNN Classifier with parameters:
+     - n_neighbors = 5
+     - metric = 'minkowski'
+     - p = 2 (Euclidean distance)
+
+3. Visualization
+   - Decision boundary plotting
+   - Training set visualization
+   - Test set visualization
+   - Confusion Matrix display
+
+## Model Performance
+- Confusion Matrix analysis
+- Accuracy score calculation
+- Visual representation of predictions
+- Decision boundary visualization
+
+
+#############################################################################################################################################################################################################################
+# XGBoost Bank Customer Churn Prediction
 
 ## Project Overview
 This project implements a machine learning solution using XGBoost to predict customer churn in a banking context. The model analyzes various customer attributes to predict whether a customer is likely to leave the bank, enabling proactive customer retention strategies.
@@ -108,9 +190,10 @@ The project uses 'churn_modelling.csv' containing customer information:
 - Detailed confusion matrix analysis
 - Optimized hyperparameters through grid search
 
+
 #############################################################################################################################################################################################################################
 
-# Breast Cancer Detection using XGBoost
+# XGBoost Breast Cancer Detection
 
 ## Project Overview
 This machine learning project implements a breast cancer detection system using the XGBoost algorithm to classify breast cancer cases as benign or malignant. The model achieves high accuracy in predicting cancer diagnoses based on cellular characteristics.
@@ -179,84 +262,4 @@ pip install scikit-learn==1.5.1
 - Integration with medical imaging data
 - Development of user interface for medical professionals
 
-#############################################################################################################################################################################################################################
 
-# Kernel SVM Social Network Ad Prediction
-
-## Project Overview
-This project implements a Kernel Support Vector Machine (SVM) classifier to predict customer purchases based on social network advertising data, using age and estimated salary as features.
-
-## Technical Stack
-- Python 3.x
-- Libraries:
-  - scikit-learn: For SVM implementation
-  - Pandas: Data manipulation
-  - NumPy: Numerical operations
-  - Matplotlib: Visualization
-  - Google Colab: Development environment
-
-## Dataset
-Uses 'Social_Network_Ads.csv' containing:
-- Age
-- Estimated Salary
-- Purchase Decision (0/1)
-
-## Features
-1. Data Preprocessing
-   - Feature scaling
-   - Train-test split (75-25)
-
-2. Model Implementation
-   - Kernel SVM with RBF kernel
-   - Random state for reproducibility
-
-3. Visualization
-   - Decision boundary plotting
-   - Training/Test set visualization
-   - Confusion Matrix
-
-
-############################################################################################################################################################################################################################
-# K-Nearest Neighbors (KNN) Social Network Ad Prediction
-
-## Project Overview
-This project implements a K-Nearest Neighbors (KNN) classifier to predict whether users will purchase based on their age and estimated salary from social network ad data. The model helps identify potential customers for targeted advertising.
-
-## Technical Stack
-- Python 3.x
-- Libraries:
-  - scikit-learn: For KNN implementation and model evaluation
-  - Pandas: Data manipulation and analysis
-  - NumPy: Numerical computations
-  - Matplotlib: Visualization
-  - Google Colab: Development environment
-
-## Dataset
-The project uses 'Social_Network_Ads.csv' containing:
-- Age
-- Estimated Salary
-- Purchase Decision (0 = No, 1 = Yes)
-
-## Features
-1. Data Preprocessing
-   - Feature scaling using StandardScaler
-   - Train-test split (75%-25%)
-   - Data normalization
-
-2. Model Implementation
-   - KNN Classifier with parameters:
-     - n_neighbors = 5
-     - metric = 'minkowski'
-     - p = 2 (Euclidean distance)
-
-3. Visualization
-   - Decision boundary plotting
-   - Training set visualization
-   - Test set visualization
-   - Confusion Matrix display
-
-## Model Performance
-- Confusion Matrix analysis
-- Accuracy score calculation
-- Visual representation of predictions
-- Decision boundary visualization
