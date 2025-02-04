@@ -1,7 +1,7 @@
 This directory contains implementations of various dimensionality reduction techniques used in machine learning. These techniques are essential for reducing the complexity of high-dimensional data while preserving important patterns and relationships.
 
 Techniques:
-1. Kernel PCA
+1. Kernel PCA Classification
 Purpose: Non-linear extension of PCA that can capture complex, non-linear relationships in data.
 
 Key Features:
