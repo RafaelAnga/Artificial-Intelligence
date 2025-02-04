@@ -48,7 +48,7 @@ Prediction Capabilities
   - Energy efficiency optimization
   - Resource planning
   - Maintenance scheduling
-  -Environmental impact assessment
+  - Environmental impact assessment
   - Operational cost optimization
   - Load forecasting
   - Performance monitoring
