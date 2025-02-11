@@ -144,7 +144,7 @@ The project uses 'Social_Network_Ads.csv' containing:
 #############################################################################################################################################################################################################################
 # XGBoost Bank Customer Churn Prediction
 
-## Project Overview
+## Project Overview ##
 This project implements a machine learning solution using XGBoost to predict customer churn in a banking context. The model analyzes various customer attributes to predict whether a customer is likely to leave the bank, enabling proactive customer retention strategies.
 
 ## Technical Stack
@@ -191,7 +191,109 @@ The project uses 'churn_modelling.csv' containing customer information:
 - Optimized hyperparameters through grid search
 
 
-#############################################################################################################################################################################################################################
+############################################################################################################################
+XGBoost Bankruptcy Prediction of Colombian Companies
+
+
+## Project Overview ##
+This project implements an XGBoost classifier to predict bankruptcy risk for Colombian companies using financial indicators. The model helps financial institutions, investors, and policymakers identify companies at risk of bankruptcy, enabling proactive risk management and informed decision-making. The model achieved 81.81% accuracy on the Kaggle competition's private test set.
+
+Technical Stack
+- Python 3.x
+- Libraries:
+- XGBoost: Core classification algorithm
+- Pandas & NumPy: Data manipulation and analysis
+- Scikit-learn: Data preprocessing and evaluation
+- Imbalanced-learn: Handling class imbalance (SMOTEENN)
+- Matplotlib & Seaborn: Visualization
+- Development Environment: Google Colab
+
+## Dataset
+Training set: 14,097 company records
+Test set: 6,042 company records
+
+# Features include:
+- Financial metrics (Cost of sales, Gross profit, Operating revenue)
+- Balance sheet items (Current assets, Current liabilities, Total equity)
+- Industry sector classification
+- Target variable: Binary (0 = solvent, 1 = bankrupt)
+
+# Features
+- Data Preprocessing
+- Missing value treatment using median/mean imputation
+- Categorical encoding for industry sectors
+- Feature scaling using StandardScaler
+- Handling severe class imbalance (247 bankruptcy cases vs 13,850 non-bankruptcy)
+
+# Model Architecture
+- XGBoost Classifier with optimized parameters:
+- Learning rate: 0.03
+- Max depth: 3
+- N_estimators: 100
+- Colsample_bytree: 0.8
+- Subsample: 0.8
+
+#Advanced Sampling Techniques
+Multiple pipeline configurations:
+- SMOTEENN for minority class oversampling
+- RandomUnderSampler for majority class balancing
+- Various sampling ratios tested (900:1100, 800:1000, etc.)
+- Evaluation Framework
+- Comprehensive metrics suite:
+- F1 Score
+- Accuracy
+- Recall
+- ROC-AUC
+- Cross-validation for robust performance assessment
+
+# Key Metrics
+- Competition Performance: 81.81% accuracy on private test set
+- Balanced handling of both bankruptcy and non-bankruptcy cases
+- Strong out-of-sample performance indicating good generalization
+
+## Business Applications ## 
+
+### Credit Risk Assessment
+- Support for loan approval decisions
+- Portfolio risk monitoring
+- Early warning system for credit deterioration
+
+### Investment Decision Support
+- Company financial health screening
+- Portfolio risk management
+Due diligence assistance
+
+### Corporate Governance
+- Financial health monitoring
+- Risk mitigation planning
+- Strategic decision support
+### Policy Development
+- Sector-wide risk assessment
+- Economic policy impact analysis
+- Regulatory framework development
+
+# Implementation Guidelines #
+## Technical Requirements ##
+- Python 3.7+
+- Minimum 8GB RAM
+- Required packages: scikit-learn, xgboost, imblearn
+
+## Data Requirements ##
+- Financial statements (not older than 12 months)
+- Complete set of required financial ratios
+- Standardized reporting format
+
+## Monitoring Protocol ##
+- Monthly performance tracking
+- Quarterly threshold calibration
+- Annual model retraining
+
+## Future Enhancements ##
+- Integration of macroeconomic indicators
+- Development of sector-specific models
+- Implementation of real-time monitoring capabilities
+- Enhanced model interpretability features
+#################################################################################################
 
 # XGBoost Breast Cancer Detection
 
@@ -261,5 +363,3 @@ pip install scikit-learn==1.5.1
 - Hyperparameter tuning optimization
 - Integration with medical imaging data
 - Development of user interface for medical professionals
-
-
