@@ -61,6 +61,70 @@ Technical Stack
 
 #############################################################################################################################################################################################################################
 
+# CNN Image Classification
+
+Project Overview
+This project implements a Convolutional Neural Network (CNN) to classify images of cats and dogs. The model leverages deep learning techniques to automatically learn and distinguish between images of these two animals. This project demonstrates the power of CNNs in computer vision tasks and serves as a classic example of binary image classification.
+
+By training the model on labeled images of cats and dogs, it can predict whether a new image belongs to a cat or a dog. This project highlights the use of TensorFlow and Keras for building and training CNNs.
+
+Technical Stack
+- Python 3.x
+- Libraries:
+  - TensorFlow: For building and training the CNN
+  - NumPy: Numerical operations
+  - ImageDataGenerator: Data preprocessing and augmentation
+- Google Colab: Development environment
+
+## Dataset
+The dataset contains labeled images of cats and dogs, divided into training and test sets. Each image is resized to 64x64 pixels for input to the CNN.
+- Training Set: Contains images of cats and dogs for training the model.
+- Test Set: Contains images of cats and dogs for evaluating the model's performance.
+
+## Features
+1. Data Preprocessing
+- Training Set:
+   -Rescaling pixel values to the range [0, 1].
+   -Data augmentation techniques like shearing, zooming, and horizontal flipping to improve generalization.
+- Test Set:
+   - Rescaling pixel values to the range [0, 1] (no augmentation applied).
+
+2. CNN Architecture
+- Input Layer: Accepts 64x64x3 images (64x64 resolution with 3 color channels).
+- Convolutional Layers:
+   - Two convolutional layers with 32 filters each, a 3x3 kernel, and ReLU activation.
+- Pooling Layers:
+   - Max pooling with a 2x2 pool size to reduce dimensionality.
+- Flattening:
+   - Converts feature maps into a 1D vector for input to the dense layers.
+- Dense Layers:
+   - One hidden layer with 128 neurons and ReLU activation.
+   - Output layer with 1 neuron and sigmoid activation for binary classification.
+
+3. Model Training
+- Optimizer: Adam (adaptive learning rate optimization).
+- Loss Function: Binary Cross-Entropy (for binary classification).
+- Metrics: Accuracy.
+- Training: 25 epochs with a batch size of 32.
+
+4. Prediction and Evaluation
+- Predicts whether a given image is of a cat or a dog.
+- Evaluates model performance on the test set.
+- Displays the predicted class (cat or dog) for a single input image.
+
+## Key Metrics
+- Accuracy: Measures the percentage of correctly classified images during training and testing.
+- Loss: Tracks the model's error during training and validation.
+
+### Business Applications
+- Pet Identification Systems: Automates the identification of pets in images.
+- Animal Shelter Management: Helps classify and organize images of animals for shelters.
+- Image-Based Search Engines: Enables search engines to classify and retrieve images based on content.
+- Educational Abilities: Demonstrates the use of deep learning in computer vision tasks.
+- Custom Applications: Can be extended to classify other types of images or categories.
+
+This project demonstrates the effectiveness of CNNs for binary image classification tasks. It can be further extended to classify more categories or applied to other computer vision problems, such as object detection or multi-class classification.
+#############################################################################################################################################################################################################################
 # Kernel SVM Social Network Ad Prediction
 
 ## Project Overview
