@@ -53,5 +53,6 @@ Prediction Capabilities
   - Load forecasting
   - Performance monitoring
 
-
-This ANN regression model provides a sophisticated solution for predicting power plant energy output, enabling better resource management and operational efficiency. The model can help power plant operators optimize their operations, reduce costs, and improve overall performance through data-driven decision-making.
+This ANN regression model provides a sophisticated solution for predicting power plant energy output, enabling better
+resource management and operational efficiency. The model can help power plant operators optimize their operations, reduce
+costs, and improve overall performance through data-driven decision-making.
